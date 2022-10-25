@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecimalToBinary", "DecimalToBinary\DecimalToBinary.csproj", "{8B27D234-8ADD-410D-8680-5AC575374447}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecimalToBinarySpec", "DecimalToBinarySpec\DecimalToBinarySpec.csproj", "{2D273DE3-D8EA-485B-9146-2CF0DDAD0895}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B27D234-8ADD-410D-8680-5AC575374447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B27D234-8ADD-410D-8680-5AC575374447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B27D234-8ADD-410D-8680-5AC575374447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B27D234-8ADD-410D-8680-5AC575374447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D273DE3-D8EA-485B-9146-2CF0DDAD0895}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D273DE3-D8EA-485B-9146-2CF0DDAD0895}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D273DE3-D8EA-485B-9146-2CF0DDAD0895}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D273DE3-D8EA-485B-9146-2CF0DDAD0895}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21F3A10E-729C-4A9B-BE3B-D357649EAEA2}
+	EndGlobalSection
+EndGlobal
