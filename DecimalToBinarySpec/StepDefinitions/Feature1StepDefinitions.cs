@@ -2,6 +2,7 @@ using System;
 using TechTalk.SpecFlow;
 using DecimalToBinary;
 
+//Aaron Allen For Class Oct 2022 Tests
 namespace DecimalToBinarySpec.StepDefinitions
 {
     [Binding]
@@ -30,10 +31,10 @@ namespace DecimalToBinarySpec.StepDefinitions
         }
 
         [Then(@"the number has become (.*)")]
-        public void ThenTheNumberHasBecome(int p0)
+        public void ThenTheNumberHasBecome(string p0)
         {
             //throw new PendingStepException();
-            _sc.Get<int>("answer").Should().Be(p0);
+            _sc.Get<string>("answer").Should().Be(p0);
         }
     }
 }
