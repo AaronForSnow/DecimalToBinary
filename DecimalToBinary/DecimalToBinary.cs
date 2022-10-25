@@ -10,10 +10,12 @@ namespace DecimalToBinary
             _binary = "";
             _maxConvert = 1024;
         }
-        public string Convert(int decimalIn)
+        public string Convert(Decimal decimalIn)
         {
+            int NewIn = (int)decimalIn;
+            if(NewIn < 0) { throw new Exception(); }
             if(decimalIn == 0) { _binary += "0"; return _binary; }
-            RecurciveConvert(decimalIn, _maxConvert);
+            RecurciveConvert(NewIn, _maxConvert);
             return _binary;
         }
         private void RecurciveConvert(int toConvert, int currentMax)

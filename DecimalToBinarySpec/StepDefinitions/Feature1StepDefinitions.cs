@@ -15,11 +15,11 @@ namespace DecimalToBinarySpec.StepDefinitions
         }
 
         [Given(@"The First Number Is (.*)")]
-        public void GivenTheFirstNumberIs(string p0)
+        public void GivenTheFirstNumberIs(Decimal p0)
         {
             //throw new PendingStepException();
             _sc.Add("ToBinary", new DecToBinary());
-            _sc.Add("ToConvert", int.Parse(p0));
+            _sc.Add("ToConvert", p0);
         }
 
         [When(@"It Is Converted to Binary")]
@@ -27,7 +27,14 @@ namespace DecimalToBinarySpec.StepDefinitions
         {
             //throw new PendingStepException();
             var converter = _sc.Get<DecToBinary>("ToBinary");
-            _sc.Add("answer", converter.Convert(_sc.Get<int>("ToConvert")));
+            try
+            {
+                _sc.Add("answer", converter.Convert(_sc.Get<Decimal>("ToConvert")));
+            }
+            catch (Exception ex)
+            {
+                _sc.Add("answer", "*throws execption*");
+            }
         }
 
         [Then(@"the number has become (.*)")]

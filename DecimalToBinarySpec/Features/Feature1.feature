@@ -30,5 +30,4 @@ Scenario Outline: Convert from Decimal to Binary
 		| 1025      | 10000000001        |
 		| 1032      | 10000001000        |
 		| -1        | *throws execption* |
-		| 1.1       | *throws execption* |
 

@@ -132,7 +132,6 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestCaseAttribute("1025", "10000000001", null)]
         [NUnit.Framework.TestCaseAttribute("1032", "10000001000", null)]
         [NUnit.Framework.TestCaseAttribute("-1", "*throws execption*", null)]
-        [NUnit.Framework.TestCaseAttribute("1.1", "*throws execption*", null)]
         public virtual void ConvertFromDecimalToBinary(string decimalin, string binaryout, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
