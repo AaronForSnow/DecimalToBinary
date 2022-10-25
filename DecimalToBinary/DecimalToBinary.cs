@@ -8,7 +8,7 @@ namespace DecimalToBinary
         public DecToBinary()
         {
             _binary = "";
-            _maxConvert = 2 ^ 12;
+            _maxConvert = 32;
         }
         public string Convert(int decimalIn)
         {
@@ -18,14 +18,18 @@ namespace DecimalToBinary
         }
         private void RecurciveConvert(int toConvert, int currentMax)
         {
-            if (toConvert == 0) { /*do nothing*/ }
-            else if (toConvert - currentMax > 0)
+            if (toConvert - currentMax >= 0)
             {
                 _binary += "1";
                 toConvert -= currentMax;
+            }
+            else if (_binary.Length > 0) { 
+                _binary += "0";                
+            }
+            if (currentMax > 0)
+            {
                 RecurciveConvert(toConvert, currentMax / 2);
             }
-            else { _binary += 0; }
             
         }
     }
