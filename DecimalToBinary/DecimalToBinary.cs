@@ -16,10 +16,7 @@ namespace DecimalToBinary
         }
         private void RecurciveConvert(int toConvert)
         {
-            if (toConvert == 0)
-            {
-                //do nothing
-            }
+            if (toConvert == 0) { /*do nothing*/ }
             else if (toConvert/2 > 0)
             {
                 _binary += "1";
