@@ -133,12 +133,12 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestCaseAttribute("1032", "10000001000", null)]
         [NUnit.Framework.TestCaseAttribute("-1", "*throws execption*", null)]
         [NUnit.Framework.TestCaseAttribute("1.1", "*throws execption*", null)]
-        public virtual void ConvertFromDecimalToBinary(string decimalIn, string binaryout, string[] exampleTags)
+        public virtual void ConvertFromDecimalToBinary(string decimalin, string binaryout, string[] exampleTags)
         {
             string[] tagsOfScenario = exampleTags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("DecimalIn", decimalIn);
-            argumentsOfScenario.Add("Binaryout", binaryout);
+            argumentsOfScenario.Add("decimalin", decimalin);
+            argumentsOfScenario.Add("binaryout", binaryout);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Convert from Decimal to Binary", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 11
 this.ScenarioInitialize(scenarioInfo);
@@ -161,13 +161,13 @@ this.ScenarioInitialize(scenarioInfo);
             {
                 this.ScenarioStart();
 #line 12
- testRunner.Given(string.Format("The First Number Is {0}", decimalIn), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given(string.Format("The First Number Is {0}", decimalin), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
 #line 13
  testRunner.When("It Is Converted to Binary", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 14
- testRunner.Then("the number has become <BinaryOut>", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("the number has become {0}", binaryout), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
