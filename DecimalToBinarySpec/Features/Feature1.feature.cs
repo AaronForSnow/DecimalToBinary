@@ -121,7 +121,7 @@ this.ScenarioInitialize(scenarioInfo);
         [NUnit.Framework.TestCaseAttribute("2", "10", null)]
         [NUnit.Framework.TestCaseAttribute("7", "111", null)]
         [NUnit.Framework.TestCaseAttribute("15", "1111", null)]
-        [NUnit.Framework.TestCaseAttribute("32", "10000", null)]
+        [NUnit.Framework.TestCaseAttribute("32", "100000", null)]
         [NUnit.Framework.TestCaseAttribute("65", "1000001", null)]
         [NUnit.Framework.TestCaseAttribute("125", "1111101", null)]
         [NUnit.Framework.TestCaseAttribute("127", "1111111", null)]

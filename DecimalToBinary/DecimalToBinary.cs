@@ -8,11 +8,11 @@ namespace DecimalToBinary
         public DecToBinary()
         {
             _binary = "";
-            _maxConvert = 32;
+            _maxConvert = 1024;
         }
         public string Convert(int decimalIn)
         {
-            if(decimalIn == 0) { _binary += "0"; }
+            if(decimalIn == 0) { _binary += "0"; return _binary; }
             RecurciveConvert(decimalIn, _maxConvert);
             return _binary;
         }
@@ -26,7 +26,7 @@ namespace DecimalToBinary
             else if (_binary.Length > 0) { 
                 _binary += "0";                
             }
-            if (currentMax > 0)
+            if (currentMax > 1)
             {
                 RecurciveConvert(toConvert, currentMax / 2);
             }
